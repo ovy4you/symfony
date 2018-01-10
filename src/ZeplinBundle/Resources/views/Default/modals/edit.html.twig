@@ -1,0 +1,26 @@
+<div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="{{ asset(path) }}{{ data.image }}" class="img-rounded" width="200" height="200">
+                </div>
+                <div class="col-lg-7">
+                    {% form_theme form 'bootstrap_3_layout.html.twig' %}
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button type="button" class="btn edit"><img src="{{ asset('bundles/zeplin/img/edit.png') }}" height="20" />Editer</button>
+    <button type="button" class="btn delete"><img src="{{ asset('bundles/zeplin/img/delete.png') }}" height="20" />Supprimer</button>
+    </div>
+</div>

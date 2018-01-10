@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  {{ parent() }}
+
+    <div class="row">
+        {% for image in content %}
+            <div class="col-lg-2 image-container" style="position: relative">
+                <a href="#" data-id="{{ image.id }}" class="click_to_load_modal_popup">
+                    <img src="{{ asset(path) }}{{ image.image }}" class="img-rounded" width="160" height="100">
+                </a>
+                <span class="set-default-picture" data-id="{{ image.id }}">set as default</span>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div id="photo-modal" class="modal fade" tabindex="-1"></div>
+
+
+
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <a href="{{ path('admin_new') }}" class=" btn btn-info btn-lg button-add-img"><span
+                        class="glyphicon glyphicon-plus"></span></a>
+        </div>
+    </footer>
+
+
+{% endblock %}

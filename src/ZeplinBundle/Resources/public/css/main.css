@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+.header h2 {
+    background-color: #00a4a7;
+    box-shadow: 0 2px 5px 0 #ccd2db;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+
+.header img {
+    float: right;
+    margin-top: -64px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+
+.button-add-img {
+    font-size: 30px;
+    border-radius: 50%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.buttons-container button.edit {
+    border-radius: 4px;
+    background-color: #00a4a7;
+    width: 163px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.buttons-container button.delete {
+    border-radius: 4px;
+    background-color: #fe206b;
+    width: 163px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+
+.buttons-container button.edit img, .buttons-container button.delete img {
+    margin-right: 5px;
+}
+
+.image-container{
+    margin-top: 20px;
+}
+
+.image-container .set-default-picture {
+    visibility: hidden;
+}
+
+
+.image-container:hover .set-default-picture {
+    position: absolute;
+    left: 50px;
+    margin-top: 70px;
+    color: white;
+    text-decoration: underline;
+    visibility: visible;
+    cursor: pointer;
+}
